@@ -1,0 +1,10 @@
+= eXXcellent programming challenge
+
+This repository provides the project scaffold for a simple
+programming challenge.
+
+NOTE::
+    You are currently looking at the common `master` branch
+    of this repository which does not contain any challenge!
+    To get started please checkout the appropriate branch
+    i.e. via `git checkout challenge-CHALLENGENAME`.
