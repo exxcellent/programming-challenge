@@ -68,5 +68,5 @@ you are convenient with.
 
 After installing Maven 3.x you should be able to
 
-- run the `de.exxcellent.challenge.App` by calling: `mvn exec:java`
-- build & test your project using `mvn clean:build`.
+- run the `de.exxcellent.challenge.App` by calling: `mvn clean compile exec:java`
+- build & test your project using `mvn clean test`.

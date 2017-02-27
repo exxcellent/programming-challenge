@@ -2,6 +2,7 @@ package de.exxcellent.challenge;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Example JUnit4 test case.
@@ -16,6 +17,7 @@ public class AppTest {
         successLabel = "successful";
     }
 
+    @Test
     public void aPointlessTest() {
         Assert.assertEquals("Expectations met", "successful", successLabel);
     }
