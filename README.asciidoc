@@ -31,7 +31,15 @@ languages if you think they would be a better fit.
 
 == Task
 
-TODO:: Describe challenge specific task
+.Task
+Implement a functionality which accepts an arbitrary nested
+Set of Collections containing other Collections or `Integer`
+values. Transform them into a serialized, *flattened* List
+of Integers.
+
+Example:: `[1, [2, 3], [4, [5, 6]]]` should become
+          `[1, 2, 3, 4, 5, 6]`
+
 
 .How to submit the results
 Ideally you provide your solutions as Git repository with
