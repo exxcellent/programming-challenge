@@ -856,7 +856,7 @@
         </option>
         <option name="FIELD_OPTIONS">
           <value>
-            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="public" />
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
             <option name="REQUIRED_TAGS" value="" />
           </value>
         </option>
@@ -1377,7 +1377,7 @@
       <option name="m_limit" value="50" />
     </inspection_tool>
     <inspection_tool class="StaticCallOnSubclass" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="StaticCollection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <inspection_tool class="StaticCollection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
       <option name="m_ignoreWeakCollections" value="true" />
     </inspection_tool>
     <inspection_tool class="StaticFieldReferenceOnSubclass" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -1581,7 +1581,7 @@
     <inspection_tool class="VolatileLongOrDoubleField" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="WaitCalledOnCondition" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="WaitWhileHoldingTwoLocks" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="WeakerAccess" enabled="true" level="INFO" enabled_by_default="true">
+    <inspection_tool class="WeakerAccess" enabled="false" level="INFO" enabled_by_default="false">
       <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="false" />
       <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="false" />
       <option name="SUGGEST_PRIVATE_FOR_INNERS" value="true" />
