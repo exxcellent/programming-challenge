@@ -1,0 +1,72 @@
+= eXXcellent programming challenge
+
+This repository provides the project scaffold for a simple
+programming challenge. Though it is rather limited and of
+synthetic characteristics, the result is intended as
+discussion point between us and you on your programming
+flavor, skills and methodology.
+
+
+== Goal
+
+Implement a solution for the given tasks which aims for
+
+* robustness & correctness
+* readability & maintainability
+* clean software design & architecture
+
+Be prepared to discuss your implementation and software design
+decisions. Show us how you would solve the tasks during your
+normal day to day business.
+
+Feel free to come with own ideas & solutions. There is no plain
+"right" or "wrong". We are more looking forward to talk to you
+about _how_ you achieved your goal, your thoughts and design
+idea and process.
+
+Please feel also free to choose other technologies and/or
+languages if you think they would be a better fit.
+
+
+
+== Task
+
+TODO:: Describe challenge specific task
+
+.How to submit the results
+Ideally you provide your solutions as Git repository with
+appropriate commits and descriptions. If you have a GitHub
+account you can do this by forking the repository and pushing
+your code into the copy of your repository.
+
+If you want feel free to show us your results in advance by
+mailing us the URL of your solution.
+
+
+== Getting started
+
+.Getting a copy
+The starting point is provided as a branch in a GitHub hosted Git
+repository.
+
+To start
+
+1. Fork or directly clone the repository
+```
+git clone git@github.com:exxcellent/programming-challenge.git
+```
+2. Switch to the branch of the challenge assinged
+```
+cd programming-challenge
+git checkout challenge-CHALLENGENAME
+```
+
+.Building and running
+The project scaffolds provides a Maven `pom.xml` as starting
+point. You should be able to start with any IDE or text editor
+you are convenient with.
+
+After installing Maven 3.x you should be able to
+
+- run the `de.exxcellent.challenge.App` by calling: `mvn exec:java`
+- build & test your project using `mvn clean:build`.
