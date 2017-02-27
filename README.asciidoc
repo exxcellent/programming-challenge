@@ -29,11 +29,32 @@ languages if you think they would be a better fit.
 
 
 
-== Task
+== Tasks
 
-TODO:: Describe challenge specific task
+Weather::
+    In `weather.csv` you’ll find daily weather data. Write a
+    program to read the file, then output the day number (column one
+    `Day`) with the smallest temperature spread (the maximum temperature
+    is the second column `MxT`, the minimum the third column `MnT`).
 
-.How to submit the results
+Football::
+    The `football.csv` file contains the results from the
+    English Premier League. The columns labeled ‘Goals’
+    and ‘Goals Allowed’ contain the total number of goals scored
+    for and against each team in that season (so Arsenal scored
+    79 goals against opponents, and had 36 goals scored against them).
+    Write a program to read the file, then print the name of the team
+    with the smallest difference in ‘for’ and ‘against’ goals.
+
+Refactoring & Extensibility::
+    See if you refactor your code, so that a single program is able
+    to solve both questions.
+
+Test Driven Development!::
+    Try to follow a test-driven development approach.
+
+
+.Submitting your results
 Ideally you provide your solutions as Git repository with
 appropriate commits and descriptions. If you have a GitHub
 account you can do this by forking the repository and pushing
