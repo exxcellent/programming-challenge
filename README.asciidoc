@@ -1,10 +1,10 @@
 = eXXcellent programming challenge
 
 This repository provides the project scaffold for a simple
-programming challenge. Though it is rather limited and of
-synthetic characteristics, the result is intended as
-discussion point between us and you on your programming
-flavor, skills and methodology.
+programming challenge. Though the challenge is very simple
+and a rather synthetic use-case, your results are helpful
+starting point to discuss your programming flavor, skills
+and methodology.
 
 
 == Goal
@@ -24,7 +24,8 @@ Feel free to come with own ideas & solutions. There is no plain
 about _how_ you achieved your goal, your thoughts and design
 idea and process.
 
-Please feel also free to choose other technologies and/or
+If you feel bored by our challenge, please feel free to provide
+creative alternative solutions and/or choose other technologies/
 languages if you think they would be a better fit.
 
 
@@ -45,29 +46,28 @@ contains a sample value which you can use as starting point.
 Please keep in mind that your application should also be able
 to handle all other, sane inputs.
 
-.How to submit the results
-Ideally you provide your solutions as Git repository with
-appropriate commits and descriptions. If you have a GitHub
-account you can do this by forking the repository and pushing
-your code into the copy of your repository.
-
-If you want feel free to show us your results in advance by
-mailing us the URL of your solution.
 
 
 == Getting started
 
 .Getting a copy
-The starting point is provided as a branch in a GitHub hosted Git
-repository.
+The starting point is provided as a branch in a Gitlab.com/GitHub
+hosted Git repository. Be careful to adjust the URLs below
+accordingly.
 
 To start
 
-1. Fork or directly clone the repository
+.Fork or directly clone the repository
+
 ```
-git clone git@github.com:exxcellent/programming-challenge.git
+git clone https://[gitlab|github].com/exxcellent/programming-challenge.git
 ```
-2. Switch to the branch of the challenge assinged
+or if you've forked the repository then
+```
+git clone git@[gitlab|github].com:YOURNAME/programming-challenge.git
+```
+
+.Switch to the branch of the challenge assinged
 ```
 cd programming-challenge
 git checkout challenge-CHALLENGENAME
@@ -80,5 +80,20 @@ you are convenient with.
 
 After installing Maven 3.x you should be able to
 
-- run the `de.exxcellent.challenge.App` by calling: `mvn clean compile exec:java`
-- build & test your project using `mvn clean test`.
+Run the main class _de.exxcellent.challenge.App_::
+    `mvn clean compile exec:java`
+
+Build & test your project::
+    `mvn clean test`.
+
+Or use your IDE functionality::
+    to run & debug you program.
+
+== Submitting your results
+Ideally you provide your solutions as Git repository with
+appropriate commits and descriptions. If you have a GitLab.com
+or GitHub account, please feel free to publish your solution
+there.
+
+If you want feel free to show us your results in advance by
+mailing us the URL of your solution.
