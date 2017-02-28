@@ -32,6 +32,10 @@ languages if you think they would be a better fit.
 
 == Task
 
+.Estimated time required
+up to ~1 hour
+
+
 .Task
 Implement a functionality which accepts an arbitrary nested
 Set of ordered Collections containing other ordered Collections
