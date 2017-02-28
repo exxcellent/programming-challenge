@@ -1,6 +1,5 @@
 package de.exxcellent.challenge;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import static java.util.Arrays.asList;
@@ -13,7 +12,7 @@ import static java.util.Arrays.asList;
  */
 public final class App {
 
-    public static final Collection<Object> EXAMPLE_NESTED_LIST = Collections.unmodifiableList(
+    public static final List<Object> EXAMPLE_NESTED_LIST = Collections.unmodifiableList(
             asList(1, asList(2, 3), asList(4, asList(5, 6)))
     );
 

@@ -34,9 +34,9 @@ languages if you think they would be a better fit.
 
 .Task
 Implement a functionality which accepts an arbitrary nested
-Set of Collections containing other Collections or `Integer`
-values (`List<?>`). Transform them into a serialized, *flattened*
-List of Integers (`List<Integer>`).
+Set of ordered Collections containing other ordered Collections
+or `Integer` values (`List<?>`). Transform them into a serialized,
+*flattened* List of Integers (`List<Integer>`).
 
 Example:: `[1, [2, 3], [4, [5, 6]]]` should become
           `[1, 2, 3, 4, 5, 6]`
