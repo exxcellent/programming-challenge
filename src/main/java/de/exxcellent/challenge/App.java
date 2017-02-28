@@ -5,8 +5,8 @@ import java.util.List;
 import static java.util.Arrays.asList;
 
 /**
- * The entry class for your solution. This class is only aimed as starting point and not intended as baseline for your software
- * design. Read: create your own classes and packages as appropriate.
+ * The entry class for your solution. This class is only aimed as starting
+ * point and not intended as baseline for your implementation.
  *
  * @author Benjamin Schmid <benjamin.schmid@exxcellent.de>
  */
