@@ -34,12 +34,16 @@ languages if you think they would be a better fit.
 .Task
 Implement a functionality which accepts an arbitrary nested
 Set of Collections containing other Collections or `Integer`
-values. Transform them into a serialized, *flattened* List
-of Integers.
+values (`List<?>`). Transform them into a serialized, *flattened*
+List of Integers (`List<Integer>`).
 
 Example:: `[1, [2, 3], [4, [5, 6]]]` should become
           `[1, 2, 3, 4, 5, 6]`
 
+The field `de.exxcellent.challenge.App#EXAMPLE_NESTED_LIST`
+contains a sample value which you can use as starting point.
+Please keep in mind that your application should also be able
+to handle all other, sane inputs.
 
 .How to submit the results
 Ideally you provide your solutions as Git repository with
