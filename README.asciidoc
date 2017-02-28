@@ -32,11 +32,18 @@ languages if you think they would be a better fit.
 
 == Tasks
 
+.Time estimation
+Up to ~3.5 hours
+
+.Task
+
 Weather::
-    In `weather.csv` you’ll find daily weather data. Write a
-    program to read the file, then output the day number (column one
-    `Day`) with the smallest temperature spread (the maximum temperature
-    is the second column `MxT`, the minimum the third column `MnT`).
+    In `weather.csv` you’ll find daily weather data of a single month.
+    Read the file, then output the day number (column one `Day`) with
+    the smallest temperature spread (difference between maximum &
+    minimum temperature of the day.)
+    The maximum temperature is the second column `MxT`, the minimum
+    temperature the third column `MnT`.
 
 Football::
     The `football.csv` file contains the results from the
@@ -44,14 +51,15 @@ Football::
     and ‘Goals Allowed’ contain the total number of goals scored
     for and against each team in that season (so Arsenal scored
     79 goals against opponents, and had 36 goals scored against them).
-    Write a program to read the file, then print the name of the team
-    with the smallest difference in ‘for’ and ‘against’ goals.
+    Read the file, then print the name of the team with the smallest
+    difference in ‘for’ and ‘against’ goals.
 
-Refactoring & Extensibility::
-    See if you refactor your code, so that a single program is able
-    to solve both questions.
+Implementation::
+    See if you can write a single program, which is able to solve both
+    questions. Aim for the software design goals described in the previous
+    chapter.
 
-Test Driven Development!::
+Test Driven Development::
     Try to follow a test-driven development approach.
 
 
