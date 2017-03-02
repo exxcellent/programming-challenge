@@ -2,7 +2,7 @@
 
 This repository provides the project scaffold for a simple
 programming challenge. Though the challenge is very simple
-and a rather synthetic use-case, your results are helpful
+and a rather synthetic use-case, your results are a helpful
 starting point to discuss your programming flavor, skills
 and methodology.
 
@@ -16,17 +16,16 @@ Implement a solution for the given tasks which aims for
 * clean software design & architecture
 
 Be prepared to discuss your implementation and software design
-decisions. Show us how you would solve the tasks during your
-normal day to day business.
+decisions. Show us how you would solve the task when working on your day-to-day job.
 
-Feel free to come with own ideas & solutions. There is no plain
-"right" or "wrong". We are more looking forward to talk to you
-about _how_ you achieved your goal, your thoughts and design
+Feel free to come up with own ideas & solutions. There is no plain
+"right" or "wrong". Instead, we want to talk to you
+about _how_ you achieved your goal and about your thoughts and design
 idea and process.
 
-If you feel bored by our challenge, please feel free to provide
+If you feel bored by our challenge, feel free to provide
 creative alternative solutions and/or choose other technologies/
-languages if you think they would be a better fit.
+languages, if you think they would be a better fit.
 
 
 
@@ -67,7 +66,7 @@ Test Driven Development::
 == Getting started
 
 .Getting a copy
-The starting point is provided as a branch in a Gitlab.com/GitHub
+The starting point for every challenge is provided as a branch in a Gitlab.com/GitHub
 hosted Git repository. Be careful to adjust the URLs below
 accordingly.
 
@@ -82,6 +81,11 @@ or if you've forked the repository then
 ```
 git clone git@[gitlab|github].com:YOURNAME/programming-challenge.git
 ```
+
+See what challenges are available by listing the branches present:
+````
+git branch -a
+````
 
 .Switch to the branch of the challenge assinged
 ```
@@ -106,6 +110,7 @@ Or use your IDE functionality::
     to run & debug you program.
 
 == Submitting your results
+
 Ideally you provide your solutions as Git repository with
 appropriate commits and descriptions. If you have a GitLab.com
 or GitHub account, please feel free to publish your solution
