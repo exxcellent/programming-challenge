@@ -36,10 +36,10 @@ up to ~1 hour
 
 
 .Task
-Implement a functionality which accepts an arbitrary nested
-Set of ordered Collections containing other ordered Collections
-or `Integer` values (`List<?>`). Transform them into a serialized,
-*flattened* List of Integers (`List<Integer>`).
+Implement a function which accepts an arbitrarily nested series of lists i.e. a
+List containing other Lists and/or `Integer`
+values (`List<?>`). Transform them into a serialized, *flattened*
+List of Integers (`List<Integer>`).
 
 Example:: `[1, [2, 3], [4, [5, 6]]]` should become
           `[1, 2, 3, 4, 5, 6]`
@@ -47,7 +47,7 @@ Example:: `[1, [2, 3], [4, [5, 6]]]` should become
 The field `de.exxcellent.challenge.App#EXAMPLE_NESTED_LIST`
 contains a sample value which you can use as starting point.
 Please keep in mind that your application should also be able
-to handle all other, sane inputs.
+to handle any other, sane input.
 
 
 
