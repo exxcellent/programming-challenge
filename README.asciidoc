@@ -55,9 +55,9 @@ git clone git@[gitlab|github].com:YOURNAME/programming-challenge.git
 ```
 
 See what challenges are available by listing the branches present:
-````
+```
 git branch -a
-````
+```
 
 .Switch to the branch of the challenge assinged
 ```
