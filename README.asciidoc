@@ -37,24 +37,24 @@ Up to ~3.5 hours
 .Task
 
 Weather::
-    In `weather.csv` you’ll find daily weather data of a single month.
-    Read the file, then output the day number (column one `Day`) with
+    In `weather.csv` you’ll find the daily weather data of a single month.
+    Read the file, then output the day number (column one `Day`) of the day with
     the smallest temperature spread (difference between maximum &
     minimum temperature of the day.)
     The maximum temperature is the second column `MxT`, the minimum
     temperature the third column `MnT`.
 
 Football::
-    The `football.csv` file contains the results from the
+    The `football.csv` file contains results of the
     English Premier League. The columns labeled ‘Goals’
     and ‘Goals Allowed’ contain the total number of goals scored
-    for and against each team in that season (so Arsenal scored
-    79 goals against opponents, and had 36 goals scored against them).
+    by and against each team (so Arsenal scored
+    79 goals themselves and had 36 goals scored against them).
     Read the file, then print the name of the team with the smallest
-    difference in ‘for’ and ‘against’ goals.
+    difference in ‘Goals’ and ‘Goals Allowed’.
 
 Implementation::
-    See if you can write a single program, which is able to solve both
+    Try to write a single program, which is able to solve both
     questions. Aim for the software design goals described in the previous
     chapter.
 
