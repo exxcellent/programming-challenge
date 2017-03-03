@@ -65,14 +65,14 @@ Test Driven Development::
 
 == Getting started
 
-.Getting a copy
+=== Getting a copy
 The starting point for every challenge is provided as a branch in a Gitlab.com/GitHub
 hosted Git repository. Be careful to adjust the URLs below
 accordingly.
 
 To start
 
-.Fork or directly clone the repository
+=== Fork or directly clone the repository
 
 ```
 git clone https://[gitlab|github].com/exxcellent/programming-challenge.git
@@ -87,13 +87,13 @@ See what challenges are available by listing the branches present:
 git branch -a
 ```
 
-.Switch to the branch of the challenge assinged
+=== Switch to the branch of the challenge assinged
 ```
 cd programming-challenge
 git checkout challenge-CHALLENGENAME
 ```
 
-.Building and running
+=== Building and running
 The project scaffolds provides a Maven `pom.xml` as starting
 point. You should be able to start with any IDE or text editor
 you are convenient with.
@@ -115,6 +115,3 @@ Ideally you provide your solutions as Git repository with
 appropriate commits and descriptions. If you have a GitLab.com
 or GitHub account, please feel free to publish your solution
 there.
-
-If you want feel free to show us your results in advance by
-mailing us the URL of your solution.
