@@ -31,10 +31,10 @@ languages, if you think they would be a better fit.
 
 == Tasks
 
-.Time estimation
+=== Time estimation
 Up to ~3.5 hours
 
-.Task
+=== Task
 
 Weather::
     In `weather.csv` you’ll find the daily weather data of a single month.
