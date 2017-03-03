@@ -31,11 +31,11 @@ languages, if you think they would be a better fit.
 
 == Task
 
-.Estimated time required
+=== Estimated time required
 up to ~1 hour
 
 
-.Task
+=== Task
 Implement a function which accepts an arbitrarily nested series of lists i.e. a
 List containing other Lists and/or `Integer`
 values (`List<?>`). Transform them into a serialized, *flattened*
