@@ -32,7 +32,8 @@ languages, if you think they would be a better fit.
 == Tasks
 
 === Time estimation
-Up to ~3.5 hours
+Between ~1 hour up to ~3.5 hours,  +
+depending on your previous experience & development environment.
 
 === Task
 
@@ -53,13 +54,17 @@ Football::
     Read the file, then print the name of the team with the smallest
     difference in ‘Goals’ and ‘Goals Allowed’.
 
-Implementation::
-    Try to write a single program, which is able to solve both
-    questions. Aim for the software design goals described in the previous
-    chapter.
+Task::
+    1. Try to write a single program, which is able to solve the "Weather" 
+       challenge. 
+    2. Then try to refactor & extend your solution, that it additonally 
+       supports the Football challenge. 
 
-Test Driven Development::
-    Try to follow a test-driven development approach.
+Process::
+* Favour the software design goals described under _Goal_ over other goals 
+  like _performance_ or _feature set_.
+* Try to follow a test-driven development approach.
+
 
 
 
