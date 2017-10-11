@@ -71,7 +71,7 @@ Process::
 
 The solution should be **maintainable**, **reusable** and **easy to understand**. Performance is not particularly important. Here are some hints on how you may achieve these goals:
 
-1. The most important aspect is **separation of concerns**. Think about the different concerns involved in the task. For example: one concern is reading the files. Try to design separate software components for each concern. 
+1. The most important aspect is **separation of concerns**. Think about the different concerns involved in the task. For example: one concern is reading the files. What others can you think of? Often a diagram showing the concerns and their relations can be helpful. If you draw a diagram, feel free to include it in your solution. Finally, try to design separate software components for each concern. 
 1. Design **intuitive interfaces** for the components in a way that each component can be easily replaced. E.g. the file reader for the csv-files in the example could be replaced with a reader that implements the same interface but reads json-files.
 1. Use **meaningful names** for classes, properties and methods. By reading the name, one should already have an idea of what something does.
 1. Document your development by **small, frequent git commits that address a specific matter** each (e.g a feature). Try to make the commit messages as expressive as possible, so a reader knows what a commit does.
