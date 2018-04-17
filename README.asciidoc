@@ -6,6 +6,10 @@ and a rather synthetic use-case, your results are a helpful
 starting point to discuss your programming flavor, skills
 and methodology.
 
+**BEFORE STARTING:** Please take the time and read this 
+document completely and carefully! It describes important 
+parts of the challenge.
+
 
 == Goal
 
