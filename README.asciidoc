@@ -57,7 +57,7 @@ Football::
     by and against each team (so Arsenal scored
     79 goals themselves and had 36 goals scored against them).
     Read the file, then print the name of the team with the smallest
-    difference in ‘Goals’ and ‘Goals Allowed’.
+    distance (absolute difference) between ‘Goals’ and ‘Goals Allowed’.
 
 Task::
     1. Try to write a single program, which is able to solve the "Weather" 
