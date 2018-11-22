@@ -17,6 +17,10 @@ public final class App {
     );
 
 
+    /**
+     * This is the main entry method of your program.
+     * @param args The CLI arguments passed
+     */
     public static void main(String... args) {
         List<Integer> result = asList(-1, -2); // yourFunction(EXAMPLE_NESTED_LIST)
 
