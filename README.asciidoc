@@ -125,7 +125,7 @@ See what challenges are available by listing the branches present:
 git branch -a
 ```
 
-=== Switch to the branch of the challenge assinged
+=== Switch to the branch of the challenge assigned
 ```
 cd programming-challenge
 git checkout challenge-CHALLENGENAME
@@ -138,11 +138,14 @@ you are convenient with.
 
 After installing Maven 3.x you should be able to
 
-Run the main class _de.exxcellent.challenge.App_::
-    `mvn clean compile exec:java`
-
 Build & test your project::
-    `mvn clean test`.
+    `mvn verify`
+
+Then to run the main class _de.exxcellent.challenge.App_::
+    `mvn exec:java`
+
+To remove the compilation output::
+    `mvn clean`
 
 Or use your IDE functionality::
     to run & debug you program.
