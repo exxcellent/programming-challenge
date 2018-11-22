@@ -1,8 +1,9 @@
 package de.exxcellent.challenge;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Example JUnit4 test case.
@@ -12,14 +13,14 @@ public class AppTest {
 
     private String successLabel = "not successful";
 
-    @Before
+    @BeforeEach
     public void setUp() {
         successLabel = "successful";
     }
 
     @Test
     public void aPointlessTest() {
-        Assert.assertEquals("Expectations met", "successful", successLabel);
+        assertEquals("successful", successLabel, "My expectations were not met");
     }
 
 }
