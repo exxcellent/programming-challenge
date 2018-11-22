@@ -13,7 +13,7 @@ public class AppTest {
     private String successLabel = "not successful";
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         successLabel = "successful";
     }
 
