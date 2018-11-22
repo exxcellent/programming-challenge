@@ -62,7 +62,7 @@ Football::
 Task::
     1. Try to write a single program, which is able to solve the "Weather" 
        challenge. 
-    2. Then try to refactor & extend your solution, that it additonally 
+    2. Then try to refactor & extend your solution, that it additionally
        supports the Football challenge. 
 
 Process::
