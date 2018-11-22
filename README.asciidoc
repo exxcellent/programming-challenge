@@ -6,6 +6,10 @@ and a rather synthetic use-case, your results are a helpful
 starting point to discuss your programming flavor, skills
 and methodology.
 
+**BEFORE STARTING:** Please take the time and read this 
+document completely and carefully! It describes important 
+parts of the challenge.
+
 
 == Goal
 
@@ -16,7 +20,8 @@ Implement a solution for the given tasks which aims for
 * clean software design & architecture
 
 Be prepared to discuss your implementation and software design
-decisions. Show us how you would solve the task when working on your day-to-day job.
+decisions. Show us how you would solve the task when working on your day-to-day 
+job.
 
 Feel free to come up with own ideas & solutions. There is no plain
 "right" or "wrong". Instead, we want to talk to you
@@ -59,7 +64,7 @@ See what challenges are available by listing the branches present:
 git branch -a
 ```
 
-=== Switch to the branch of the challenge assinged
+=== Switch to the branch of the challenge assigned
 ```
 cd programming-challenge
 git checkout challenge-CHALLENGENAME
@@ -72,11 +77,14 @@ you are convenient with.
 
 After installing Maven 3.x you should be able to
 
-Run the main class _de.exxcellent.challenge.App_::
-    `mvn clean compile exec:java`
-
 Build & test your project::
-    `mvn clean test`.
+    `mvn verify`
+
+Then to run the main class _de.exxcellent.challenge.App_::
+    `mvn exec:java`
+
+To remove the compilation output::
+    `mvn clean`
 
 Or use your IDE functionality::
     to run & debug you program.
