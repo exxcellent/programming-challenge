@@ -1,0 +1,82 @@
+import java.util.*;   // for Scanner, Arrays
+
+  class Weather {
+    // Main method
+    public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		// Get the number of temperatures to process
+		System.out.print("How many days' temperatures? ");
+		int numDays = input.nextInt();
+		int[] temps = new int[numDays];
+		int tempSum = 0;
+		
+		
+		// Ask for each of the temperatures (store in an array for later)
+		for (int i = 0; i < numDays; i++) {
+    		    if(numDays>=1&&numDays<=31) {
+			System.out.print("Day " + (i + 1) + "'s high temp: ");
+			temps[i] = input.nextInt();
+			tempSum += temps[i];
+		}
+		}
+		
+		System.out.printf("Average temp = %.1f\n", averageTemp);
+		System.out.println(numAboveAve + " days were above average.");
+		System.out.println();
+		System.out.println("Temperatures: " + Arrays.toString(temps));
+		Arrays.sort(temps);
+       
+	
+    	// Display hottest temperature
+		int maxT = maxT(temps);
+			System.out.println("The maximum  temperature of the day is: " + maxT + " degree");
+ 
+		// Display coldest temperature
+		int minT = minT(temps);
+			System.out.println("The minimum temperature of the " + minT + " degree");
+			
+			
+			
+	// Calculate the average and the number of temperatures above average.
+		double averageTemp = (double)tempSum / numDays;
+		int numAboveAve = 0;
+		
+		for (int i = 0; i < temps.length; i++) {
+			if (temps[i] > averageTemp) {
+				numAboveAve++;
+			}
+		}
+ 
+ 
+	    // Get hottest temperature
+    	public  static int maxT(int[] temps)
+     	{
+		int max = array[0];
+ 
+		// Check and replace max temp
+		for(int i = 1; i<temps.length; i++){
+			if(max < temps[i])
+				max = temps[i];
+		}
+		return max;
+	}
+
+
+
+	// Get coldest temperature
+	public static int minT(int[] array)
+	{
+		int min = array[0];
+		for(int i = 1; i < temps.length; i++){
+			if(min > temps[i])
+				min = temps[i];
+		}
+		return min;
+	}
+ 
+ 
+ 
+    }
+
+		
