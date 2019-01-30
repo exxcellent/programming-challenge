@@ -52,7 +52,7 @@ import java.util.*;   // for Scanner, Arrays
 	    // Get hottest temperature
     	public  static int maxT(int[] temps)
      	{
-		int max = array[0];
+		int max = temps[0];
  
 		// Check and replace max temp
 		for(int i = 1; i<temps.length; i++){
@@ -65,9 +65,9 @@ import java.util.*;   // for Scanner, Arrays
 
 
 	// Get coldest temperature
-	public static int minT(int[] array)
+	public static int minT(int[] temps)
 	{
-		int min = array[0];
+		int min = temps[0];
 		for(int i = 1; i < temps.length; i++){
 			if(min > temps[i])
 				min = temps[i];
