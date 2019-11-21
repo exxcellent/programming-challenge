@@ -6,25 +6,25 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Example JUnit4 test case.
+ * Example JUnit 5 test case.
  * @author Benjamin Schmid <benjamin.schmid@exxcellent.de>
  */
-public class AppTest {
+class AppTest {
 
     private String successLabel = "not successful";
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         successLabel = "successful";
     }
 
     @Test
-    public void aPointlessTest() {
+    void aPointlessTest() {
         assertEquals("successful", successLabel, "My expectations were not met");
     }
 
     @Test
-    public void runFootball() {
+    void runFootball() {
         App.main("--football", "football.csv");
     }
 
