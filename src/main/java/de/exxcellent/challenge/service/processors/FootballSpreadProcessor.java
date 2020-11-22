@@ -2,6 +2,7 @@ package de.exxcellent.challenge.service.processors;
 
 import de.exxcellent.challenge.bo.BaseBO;
 import de.exxcellent.challenge.bo.FootballDataBO;
+import de.exxcellent.challenge.constants.FileFormat;
 
 import java.util.List;
 
@@ -18,8 +19,8 @@ public class FootballSpreadProcessor implements SpreadProcessor {
                 });
     }
 
-    public void processFootballData(List<? extends BaseBO> footballData) {
+    public void processFootballData(List<? extends BaseBO> footballData, FileFormat fileFormat) {
         FootballDataBO teamWithSmallestGoalSpread = new FootballSpreadProcessor().calculateSpread(footballData);
-        System.out.printf("Team with smallest goal spread from CSV: %s%n", teamWithSmallestGoalSpread.getTeam());
+        System.out.printf("Team with smallest goal spread from %s: %s%n", fileFormat.name(), teamWithSmallestGoalSpread.getTeam());
     }
 }

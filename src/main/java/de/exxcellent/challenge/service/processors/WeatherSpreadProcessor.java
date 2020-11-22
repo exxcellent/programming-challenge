@@ -2,6 +2,7 @@ package de.exxcellent.challenge.service.processors;
 
 import de.exxcellent.challenge.bo.BaseBO;
 import de.exxcellent.challenge.bo.WeatherDataBO;
+import de.exxcellent.challenge.constants.FileFormat;
 
 import java.util.List;
 
@@ -18,8 +19,8 @@ public class WeatherSpreadProcessor implements SpreadProcessor {
                 });
     }
 
-    public void processWeatherData(List<? extends BaseBO> weatherData) {
+    public void processWeatherData(List<? extends BaseBO> weatherData, FileFormat fileFormat) {
         WeatherDataBO dayWithSmallestTempSpread = new WeatherSpreadProcessor().calculateSpread(weatherData);
-        System.out.printf("Day with smallest temperature spread from CSV: Day %s%n", dayWithSmallestTempSpread.getDay());
+        System.out.printf("Day with smallest temperature spread from %s: Day %s%n", fileFormat.name(), dayWithSmallestTempSpread.getDay());
     }
 }
