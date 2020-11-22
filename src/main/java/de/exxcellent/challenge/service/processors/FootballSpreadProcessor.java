@@ -19,8 +19,8 @@ public class FootballSpreadProcessor implements SpreadProcessor {
                 });
     }
 
-    public void processFootballData(List<? extends BaseBO> footballData, FileFormat fileFormat) {
+    public String processFootballData(List<? extends BaseBO> footballData, FileFormat fileFormat) {
         FootballDataBO teamWithSmallestGoalSpread = new FootballSpreadProcessor().calculateSpread(footballData);
-        System.out.printf("Team with smallest goal spread from %s: %s%n", fileFormat.name(), teamWithSmallestGoalSpread.getTeam());
+        return "Team with smallest goal spread from " + fileFormat.name() + ": " + teamWithSmallestGoalSpread.getTeam();
     }
 }

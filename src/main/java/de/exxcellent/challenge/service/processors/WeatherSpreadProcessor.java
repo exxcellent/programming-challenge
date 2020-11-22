@@ -19,8 +19,8 @@ public class WeatherSpreadProcessor implements SpreadProcessor {
                 });
     }
 
-    public void processWeatherData(List<? extends BaseBO> weatherData, FileFormat fileFormat) {
+    public String processWeatherData(List<? extends BaseBO> weatherData, FileFormat fileFormat) {
         WeatherDataBO dayWithSmallestTempSpread = new WeatherSpreadProcessor().calculateSpread(weatherData);
-        System.out.printf("Day with smallest temperature spread from %s: Day %s%n", fileFormat.name(), dayWithSmallestTempSpread.getDay());
+        return "Day with smallest temperature spread from " + fileFormat.name() + ": Day " + dayWithSmallestTempSpread.getDay();
     }
 }

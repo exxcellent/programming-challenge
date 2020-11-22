@@ -21,10 +21,10 @@ public final class App {
     public static void main(String... args) {
         try {
             AppController appController = new AppController();
-            appController.processCSVData("de/exxcellent/challenge/football.csv", FOOTBALL);
-            appController.processCSVData("de/exxcellent/challenge/weather.csv", WEATHER);
-            appController.processJSONData("de/exxcellent/challenge/football.json", FOOTBALL);
-            appController.processJSONData("de/exxcellent/challenge/weather.json", WEATHER);
+            System.out.println(appController.processCSVData("de/exxcellent/challenge/football.csv", FOOTBALL));
+            System.out.println(appController.processCSVData("de/exxcellent/challenge/weather.csv", WEATHER));
+            System.out.println(appController.processJSONData("de/exxcellent/challenge/football.json", FOOTBALL));
+            System.out.println(appController.processJSONData("de/exxcellent/challenge/weather.json", WEATHER));
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());

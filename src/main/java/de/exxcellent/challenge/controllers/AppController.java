@@ -2,7 +2,6 @@ package de.exxcellent.challenge.controllers;
 
 import de.exxcellent.challenge.bo.BaseBO;
 import de.exxcellent.challenge.constants.Domain;
-import de.exxcellent.challenge.constants.FileFormat;
 import de.exxcellent.challenge.service.processors.FootballSpreadProcessor;
 import de.exxcellent.challenge.service.processors.WeatherSpreadProcessor;
 import de.exxcellent.challenge.service.readers.CsvReader;
@@ -17,21 +16,23 @@ import static de.exxcellent.challenge.constants.FileFormat.JSON;
 
 public class AppController {
 
-    public void processCSVData(String filePath, Domain domain) throws IOException {
+    public String processCSVData(String filePath, Domain domain) throws IOException {
         String csvData =  FileReaderUtil.readFile(filePath);
         List<BaseBO> domainObjectList = new CsvReader().read(csvData, domain);
         switch(domain) {
-            case FOOTBALL: new FootballSpreadProcessor().processFootballData(domainObjectList, CSV); break;
-            case WEATHER: new WeatherSpreadProcessor().processWeatherData(domainObjectList, CSV); break;
+            case FOOTBALL: return new FootballSpreadProcessor().processFootballData(domainObjectList, CSV);
+            case WEATHER: return new WeatherSpreadProcessor().processWeatherData(domainObjectList, CSV);
         }
+        return null;
     }
 
-    public void processJSONData(String filePath, Domain domain) throws IOException {
+    public String processJSONData(String filePath, Domain domain) throws IOException {
         String jsonData = FileReaderUtil.readFile(filePath);
         List<? extends BaseBO> domainData = new JsonReader().read(jsonData, domain);
         switch (domain) {
-            case FOOTBALL: new FootballSpreadProcessor().processFootballData(domainData, JSON); break;
-            case WEATHER: new WeatherSpreadProcessor().processWeatherData(domainData, JSON); break;
+            case FOOTBALL: return new FootballSpreadProcessor().processFootballData(domainData, JSON);
+            case WEATHER: return new WeatherSpreadProcessor().processWeatherData(domainData, JSON);
         }
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.utils;
 
 import de.exxcellent.challenge.utils.FileReaderUtil;
 import org.junit.jupiter.api.Test;
