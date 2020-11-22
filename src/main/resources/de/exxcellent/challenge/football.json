@@ -1,0 +1,202 @@
+[
+  {
+    "Team": "Arsenal",
+    "Games": 38,
+    "Wins": 26,
+    "Losses": 9,
+    "Draws": 3,
+    "Goals": 79,
+    "Goals Allowed": 36,
+    "Points": 87
+  },
+  {
+    "Team": "Liverpool",
+    "Games": 38,
+    "Wins": 24,
+    "Losses": 8,
+    "Draws": 6,
+    "Goals": 67,
+    "Goals Allowed": 30,
+    "Points": 80
+  },
+  {
+    "Team": "Manchester United",
+    "Games": 38,
+    "Wins": 24,
+    "Losses": 5,
+    "Draws": 9,
+    "Goals": 87,
+    "Goals Allowed": 45,
+    "Points": 77
+  },
+  {
+    "Team": "Newcastle",
+    "Games": 38,
+    "Wins": 21,
+    "Losses": 8,
+    "Draws": 9,
+    "Goals": 74,
+    "Goals Allowed": 52,
+    "Points": 71
+  },
+  {
+    "Team": "Leeds",
+    "Games": 38,
+    "Wins": 18,
+    "Losses": 12,
+    "Draws": 8,
+    "Goals": 53,
+    "Goals Allowed": 37,
+    "Points": 66
+  },
+  {
+    "Team": "Chelsea",
+    "Games": 38,
+    "Wins": 17,
+    "Losses": 13,
+    "Draws": 8,
+    "Goals": 66,
+    "Goals Allowed": 38,
+    "Points": 64
+  },
+  {
+    "Team": "West_Ham",
+    "Games": 38,
+    "Wins": 15,
+    "Losses": 8,
+    "Draws": 15,
+    "Goals": 48,
+    "Goals Allowed": 57,
+    "Points": 53
+  },
+  {
+    "Team": "Aston_Villa",
+    "Games": 38,
+    "Wins": 12,
+    "Losses": 14,
+    "Draws": 12,
+    "Goals": 46,
+    "Goals Allowed": 47,
+    "Points": 50
+  },
+  {
+    "Team": "Tottenham",
+    "Games": 38,
+    "Wins": 14,
+    "Losses": 8,
+    "Draws": 16,
+    "Goals": 49,
+    "Goals Allowed": 53,
+    "Points": 50
+  },
+  {
+    "Team": "Blackburn",
+    "Games": 38,
+    "Wins": 12,
+    "Losses": 10,
+    "Draws": 16,
+    "Goals": 55,
+    "Goals Allowed": 51,
+    "Points": 46
+  },
+  {
+    "Team": "Southampton",
+    "Games": 38,
+    "Wins": 12,
+    "Losses": 9,
+    "Draws": 17,
+    "Goals": 46,
+    "Goals Allowed": 54,
+    "Points": 45
+  },
+  {
+    "Team": "Middlesbrough",
+    "Games": 38,
+    "Wins": 12,
+    "Losses": 9,
+    "Draws": 17,
+    "Goals": 35,
+    "Goals Allowed": 47,
+    "Points": 45
+  },
+  {
+    "Team": "Fulham",
+    "Games": 38,
+    "Wins": 10,
+    "Losses": 14,
+    "Draws": 14,
+    "Goals": 36,
+    "Goals Allowed": 44,
+    "Points": 44
+  },
+  {
+    "Team": "Charlton",
+    "Games": 38,
+    "Wins": 10,
+    "Losses": 14,
+    "Draws": 14,
+    "Goals": 38,
+    "Goals Allowed": 49,
+    "Points": 44
+  },
+  {
+    "Team": "Everton",
+    "Games": 38,
+    "Wins": 11,
+    "Losses": 10,
+    "Draws": 17,
+    "Goals": 45,
+    "Goals Allowed": 57,
+    "Points": 43
+  },
+  {
+    "Team": "Bolton",
+    "Games": 38,
+    "Wins": 9,
+    "Losses": 13,
+    "Draws": 16,
+    "Goals": 44,
+    "Goals Allowed": 62,
+    "Points": 40
+  },
+  {
+    "Team": "Sunderland",
+    "Games": 38,
+    "Wins": 10,
+    "Losses": 10,
+    "Draws": 18,
+    "Goals": 29,
+    "Goals Allowed": 51,
+    "Points": 40
+  },
+  {
+    "Team": "Ipswich",
+    "Games": 38,
+    "Wins": 9,
+    "Losses": 9,
+    "Draws": 20,
+    "Goals": 41,
+    "Goals Allowed": 64,
+    "Points": 36
+  },
+  {
+    "Team": "Derby",
+    "Games": 38,
+    "Wins": 8,
+    "Losses": 6,
+    "Draws": 24,
+    "Goals": 33,
+    "Goals Allowed": 63,
+    "Points": 30
+  },
+  {
+    "Team": "Leicester",
+    "Games": 38,
+    "Wins": 5,
+    "Losses": 13,
+    "Draws": 20,
+    "Goals": 30,
+    "Goals Allowed": 64,
+    "Points": 28
+  }
+]

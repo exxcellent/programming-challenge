@@ -1,6 +1,6 @@
 package de.exxcellent.challenge.bo;
 
-public class FootballDataBO {
+public class FootballDataBO implements BaseBO {
 
     private String team;
     private Integer games;

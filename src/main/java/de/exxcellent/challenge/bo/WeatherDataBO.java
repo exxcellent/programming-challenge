@@ -1,6 +1,6 @@
 package de.exxcellent.challenge.bo;
 
-public class WeatherDataBO {
+public class WeatherDataBO implements BaseBO {
     private Integer day;
     private Integer maxTemperature;
     private Integer minTemperature;
