@@ -21,7 +21,15 @@ public final class App {
      * @param args The CLI arguments passed
      */
     public static void main(String... args) {
-        AppController appController = new AppController();
-        appController.begin();
+        try {
+            AppController appController = new AppController();
+            appController.processFootballDataFromCSV("de/exxcellent/challenge/football.csv");
+            appController.processFootballDataFromJson("de/exxcellent/challenge/football.json");
+            appController.processWeatherDataFromCSV("de/exxcellent/challenge/weather.csv");
+            appController.processWeatherDataFromJson("de/exxcellent/challenge/weather.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
     }
 }

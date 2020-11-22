@@ -20,14 +20,4 @@ public class FileReaderUtilTest {
         String result = FileReaderUtil.readFile("de/exxcellent/challenge/dummy.csv");
         assertNull(result);
     }
-
-    @Test
-    public void testReadFile_NegativeTest() throws IOException {
-        try {
-            String result = FileReaderUtil.readFile("de/exxcellent/challenge/dummy.csv");
-            fail("Exception was supposed to happen");
-        } catch (Exception e) {
-            assertNotNull(e);
-        }
-    }
 }

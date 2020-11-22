@@ -1,14 +1,24 @@
 package de.exxcellent.challenge.bo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class FootballDataBO implements BaseBO {
 
+    @JsonProperty("Team")
     private String team;
+    @JsonProperty("Games")
     private Integer games;
+    @JsonProperty("Wins")
     private Integer wins;
+    @JsonProperty("Losses")
     private Integer losses;
+    @JsonProperty("Draws")
     private Integer draws;
+    @JsonProperty("Goals")
     private Integer goals;
+    @JsonProperty("Goals Allowed")
     private Integer goalsAllowed;
+    @JsonProperty("Points")
     private Integer points;
 
     public FootballDataBO(String footballTeamDataStr) {
@@ -22,6 +32,8 @@ public class FootballDataBO implements BaseBO {
         this.goalsAllowed = Integer.parseInt(footballTeamData[6]);
         this.points = Integer.parseInt(footballTeamData[7]);
     }
+
+    public FootballDataBO() { }
 
     public String getTeam() {
         return team;

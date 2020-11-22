@@ -1,19 +1,35 @@
 package de.exxcellent.challenge.bo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class WeatherDataBO implements BaseBO {
+    @JsonProperty("Day")
     private Integer day;
+    @JsonProperty("MxT")
     private Integer maxTemperature;
+    @JsonProperty("MnT")
     private Integer minTemperature;
+    @JsonProperty("AvT")
     private Double avt;
+    @JsonProperty("AvDP")
     private Double avdp;
+    @JsonProperty("1HrP TPcpn")
     private Integer oneHrP_tpCpn;
+    @JsonProperty("PDir")
     private Integer pDir;
+    @JsonProperty("AvSp")
     private Double avSp;
+    @JsonProperty("Dir")
     private Integer dir;
+    @JsonProperty("MxS")
     private Integer mxS;
+    @JsonProperty("SkyC")
     private Double skyC;
+    @JsonProperty("MxR")
     private Integer mxR;
+    @JsonProperty("Mn")
     private Integer mn;
+    @JsonProperty("R AvSLP")
     private Double r_avSlp;
 
     public WeatherDataBO(String weatherDataStr) {
@@ -33,6 +49,8 @@ public class WeatherDataBO implements BaseBO {
         this.mn = Integer.parseInt(weatherData[12]);
         this.r_avSlp = Double.parseDouble(weatherData[13]);
     }
+
+    public WeatherDataBO() { }
 
     public Integer getDay() {
         return day;

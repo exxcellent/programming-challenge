@@ -1,21 +1,15 @@
 package de.exxcellent.challenge.factory;
 
-import de.exxcellent.challenge.bo.BaseBO;
-import de.exxcellent.challenge.bo.FootballDataBO;
-import de.exxcellent.challenge.bo.WeatherDataBO;
+import de.exxcellent.challenge.bo.*;
+import de.exxcellent.challenge.constants.Domain;
 
 public class BaseBOFactory {
 
-    public static BaseBO getBaseObject(String data, String objectType){
-        if(objectType == null){
-            return null;
+    public static BaseBO getBaseObject(String data, Domain domain){
+        switch (domain) {
+            case FOOTBALL: return (data == null) ? new FootballDataListBO() : new FootballDataBO(data);
+            case WEATHER: return (data == null) ? new WeatherDataListBO() : new WeatherDataBO(data);
+            default: return null;
         }
-        if(objectType.equalsIgnoreCase("FOOTBALL")){
-            return new FootballDataBO(data);
-        } else if(objectType.equalsIgnoreCase("WEATHER")){
-            return new WeatherDataBO(data);
-        }
-
-        return null;
     }
 }
