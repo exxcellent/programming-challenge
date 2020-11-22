@@ -17,4 +17,9 @@ public class WeatherSpreadProcessor implements SpreadProcessor {
                     return  (minDifference > currentDifference) ? curTemp : minTemp;
                 });
     }
+
+    public void processWeatherData(List<? extends BaseBO> weatherData) {
+        WeatherDataBO dayWithSmallestTempSpread = new WeatherSpreadProcessor().calculateSpread(weatherData);
+        System.out.printf("Day with smallest temperature spread from CSV: Day %s%n", dayWithSmallestTempSpread.getDay());
+    }
 }

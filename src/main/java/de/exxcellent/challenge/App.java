@@ -1,12 +1,10 @@
 package de.exxcellent.challenge;
 
-import de.exxcellent.challenge.bo.FootballDataBO;
-import de.exxcellent.challenge.bo.WeatherDataBO;
 import de.exxcellent.challenge.controllers.AppController;
-import de.exxcellent.challenge.utils.FileReaderUtil;
-
 import java.io.IOException;
-import java.util.Arrays;
+
+import static de.exxcellent.challenge.constants.Domain.FOOTBALL;
+import static de.exxcellent.challenge.constants.Domain.WEATHER;
 
 /**
  * The entry class for your solution. This class is only aimed as starting point and not intended as baseline for your software
@@ -23,10 +21,10 @@ public final class App {
     public static void main(String... args) {
         try {
             AppController appController = new AppController();
-            appController.processFootballDataFromCSV("de/exxcellent/challenge/football.csv");
-            appController.processFootballDataFromJson("de/exxcellent/challenge/football.json");
-            appController.processWeatherDataFromCSV("de/exxcellent/challenge/weather.csv");
-            appController.processWeatherDataFromJson("de/exxcellent/challenge/weather.json");
+            appController.processCSVData("de/exxcellent/challenge/football.csv", FOOTBALL);
+            appController.processCSVData("de/exxcellent/challenge/weather.csv", WEATHER);
+            appController.processJSONData("de/exxcellent/challenge/football.json", FOOTBALL);
+            appController.processJSONData("de/exxcellent/challenge/weather.json", WEATHER);
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());

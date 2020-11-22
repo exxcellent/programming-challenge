@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.exxcellent.challenge.bo.BaseBO;
 import de.exxcellent.challenge.bo.FootballDataListBO;
-import de.exxcellent.challenge.bo.WeatherDataBO;
 import de.exxcellent.challenge.bo.WeatherDataListBO;
 import de.exxcellent.challenge.constants.Domain;
 import de.exxcellent.challenge.factory.BaseBOFactory;

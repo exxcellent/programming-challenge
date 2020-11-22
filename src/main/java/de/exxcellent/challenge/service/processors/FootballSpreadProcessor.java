@@ -11,10 +11,15 @@ public class FootballSpreadProcessor implements SpreadProcessor {
     public FootballDataBO calculateSpread(List<? extends BaseBO> footballData) {
         return footballData.stream()
                 .map(teamData -> (FootballDataBO) teamData)
-                .reduce((FootballDataBO) footballData.get(0), (minTeam, curTeam) -> {
+                .reduce((FootballDataBO) footballData.get(0), (minSpreadTeam, curTeam) -> {
                     int currentDifference = getDifference(curTeam.getGoals(), curTeam.getGoalsAllowed());
-                    int minDifference = getDifference(minTeam.getGoals(), minTeam.getGoalsAllowed());
-                    return  (minDifference > currentDifference) ? curTeam : minTeam;
+                    int minDifference = getDifference(minSpreadTeam.getGoals(), minSpreadTeam.getGoalsAllowed());
+                    return  (minDifference > currentDifference) ? curTeam : minSpreadTeam;
                 });
+    }
+
+    public void processFootballData(List<? extends BaseBO> footballData) {
+        FootballDataBO teamWithSmallestGoalSpread = new FootballSpreadProcessor().calculateSpread(footballData);
+        System.out.printf("Team with smallest goal spread from CSV: %s%n", teamWithSmallestGoalSpread.getTeam());
     }
 }
