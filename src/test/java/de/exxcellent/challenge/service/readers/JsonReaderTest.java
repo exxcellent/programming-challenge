@@ -17,10 +17,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class CsvReaderTest {
-
+public class JsonReaderTest {
     @InjectMocks
-    CsvReader csvReader;
+    JsonReader jsonReader;
 
     @BeforeAll
     void init() {
@@ -29,10 +28,11 @@ public class CsvReaderTest {
 
     @Test
     public void readTest() throws IOException {
-        String csvData =  FileReaderUtil.readFile("de/exxcellent/challenge/football.csv");
-        List<BaseBO> baseBOS = csvReader.read(csvData, Domain.FOOTBALL);
+        String jsonData =  FileReaderUtil.readFile("de/exxcellent/challenge/football.json");
+        List<? extends BaseBO> baseBOS = jsonReader.read(jsonData, Domain.FOOTBALL);
         assertNotNull(baseBOS);
         assertEquals(baseBOS.size(), 20);
-        assertEquals(((FootballDataBO) baseBOS.get(0)).getTeam(), "Arsenal");
+        FootballDataBO footballData = ((List<FootballDataBO>) baseBOS).get(0);
+        assertEquals(footballData.getTeam(), "Arsenal");
     }
 }
