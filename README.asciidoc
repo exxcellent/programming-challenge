@@ -28,16 +28,12 @@ Feel free to come up with own ideas & solutions. There is no plain
 about _how_ you achieved your goal and about your thoughts and design
 idea and process.
 
-If you feel bored by our challenge, feel free to provide
-creative alternative solutions and/or choose other technologies/
-languages, if you think they would be a better fit.
-
 
 
 == Tasks
 
 === Time estimation
-Between ~1 hour up to ~3.5 hours,  +
+Between ~1.5 hour up to ~4 hours,  +
 depending on your previous experience & development environment.
 
 === Task
