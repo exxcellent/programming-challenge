@@ -1,25 +1,28 @@
 package de.exxcellent.challenge;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import de.exxcellent.challenge.service.AppService;
+
 /**
- * The entry class for your solution. This class is only aimed as starting point and not intended as baseline for your software
- * design. Read: create your own classes and packages as appropriate.
- *
- * @author Benjamin Schmid <benjamin.schmid@exxcellent.de>
+ * This is the entry class for the app. It only handles the logging 
+ * of the start and end time and propagates the exit code.
+ * 
+ * @author Ralph Löwe <ralph.loewe@gmail.com>
  */
 public final class App {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+	
     /**
-     * This is the main entry method of your program.
+     * The main function only handles basic logging, printing out the version and calling the central service.
      * @param args The CLI arguments passed
      */
     public static void main(String... args) {
-
-        // Your preparation code …
-
-        String dayWithSmallestTempSpread = "Someday";     // Your day analysis function call …
-        System.out.printf("Day with smallest temperature spread : %s%n", dayWithSmallestTempSpread);
-
-        String teamWithSmallestGoalSpread = "A good team"; // Your goal analysis function call …
-        System.out.printf("Team with smallest goal spread       : %s%n", teamWithSmallestGoalSpread);
+    	LOGGER.info("Starting app, version 1.0");
+    	AppService app = new AppService();
+    	app.processData(args);
+    	LOGGER.info("End");
     }
 }
