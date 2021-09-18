@@ -2,9 +2,14 @@ package de.exxcellent.challenge.repository;
 
 import com.opencsv.bean.CsvBindByName;
 
+/**
+ * Simple bean to define the rows of the weather CSV.
+ * 
+ * @author Ralph Löwe <ralph.loewe@gmail.com>
+ */
 public class WeatherLine {
 	@CsvBindByName
-	private long day;
+	private String day;
 	
 	@CsvBindByName
 	private long mxT;
@@ -12,11 +17,11 @@ public class WeatherLine {
 	@CsvBindByName
 	private long mnT;
 
-	public long getDay() {
+	public String getDay() {
 		return day;
 	}
 
-	public void setDay(long day) {
+	public void setDay(String day) {
 		this.day = day;
 	}
 

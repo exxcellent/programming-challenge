@@ -20,7 +20,7 @@ public class ArgumentsService {
 	public ArgumentsService() {
 		options = new Options();
 		
-//		options.addOption("f", "football", true, "process the soccer results. Resource location via classpath uri.");
+		options.addOption("f", "football", true, "process the soccer results. Resource location via classpath uri.");
 		options.addOption("w", "weather", true, "process the weather results. Resource location via classpath uri.");
 		options.addOption("h", "help", false, "print this help.");
 	}

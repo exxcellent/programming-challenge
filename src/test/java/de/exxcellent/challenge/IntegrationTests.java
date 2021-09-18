@@ -13,33 +13,42 @@ import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-
 /**
- * Example JUnit 5 test case.
+ * I decided to only write integration tests at that point since it is a single application
+ * that does not expose an API and has only file or stream interfaces. So we test the whole
+ * app and every in the instructions suggested case.
+ * 
+ * A more interwoven app would need another setup of tests.
+ * 
  * @author Ralph Löwe <ralph.loewe@googlemail.com>
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(fullyQualifiedNames = "com.baeldung.powermockito.introduction.*")
+@PrepareForTest(fullyQualifiedNames = "de.exxcellent.challenge.*")
 class IntegrationTests {
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 	
+	// save the original streams in those variables at init time.
 	private final PrintStream originalOut = System.out;
 	
 	private final PrintStream originalErr = System.err;
 
 	@BeforeEach
 	public void setUpStreams() {
+		// overwrite the streams with PrintStreams to BAOS.
+		// This is not the most elegant way, but it depends on the way the application outputs the results.
 	    System.setOut(new PrintStream(outContent));
 	    System.setErr(new PrintStream(errContent));
 	}
 
 	@AfterEach
 	public void restoreStreams() {
+		// Bring back original streams.
 	    System.setOut(originalOut);
 	    System.setErr(originalErr);
 	}
+	
     @Test
     void runWeatherWithProvidedDataSet() throws IOException {
         App.main("--weather", "weather.csv");
@@ -72,7 +81,7 @@ class IntegrationTests {
     void runHelp() throws IOException {
 		App.main("-h");
         String allWrittenLines = new String(outContent.toByteArray()); 
-        assertTrue(allWrittenLines.contains("usage: programming-challenge [-h] [-w <arg>]"));
+        assertTrue(allWrittenLines.contains("usage: programming-challenge [-f <arg>] [-h] [-w <arg>]"));
     }
 
     @Test
@@ -87,5 +96,12 @@ class IntegrationTests {
 		App.main("--weather", "not_found.csv");
         String allWrittenLinesOut = new String(outContent.toByteArray()); 
         assertTrue(allWrittenLinesOut.contains("Could not read the input file. Check if it is reachable by classloader."));
+    }
+
+    @Test
+    void runFootballWithProvidedDataSet() throws IOException {
+        App.main("--football", "football.csv");
+        String allWrittenLines = new String(outContent.toByteArray()); 
+        assertTrue(allWrittenLines.contains("Team(s) with smallest goal spread : Aston_Villa"));
     }
 }
