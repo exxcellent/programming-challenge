@@ -16,7 +16,7 @@ public final class App {
 	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 	
     /**
-     * The main function only handles basic logging, printing out the version and calling the central service.
+     * The main function is only calling the central service.
      * @param args The CLI arguments passed
      */
     public static void main(String... args) {

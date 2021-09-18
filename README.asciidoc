@@ -1,12 +1,22 @@
+== Introduction
 
+Please take a look at Overview.png. The app is separated into six different services.
+Their concerns are:
+
+- AppService: orchestrate the process and most of all interpret the parameters.
+- ArgumentsService: encapsulate the library to read the parameters to a sane extend.
+- CSVRepository: is a data source to read the input data from.
+- MapperService: maps the external representation into a better to generic process format.
+- MinDifferenceProcessService: calculate the derived data as a report line from the given data.
+- ReportService: encapsulates the representation of the output data.
 
 == Actions i did to meet to goals:
 
 * robustness & correctness
 
 ** Checking for input file, if it is there.
-** Help switch for the new user
-** Integration tests that provide 95% coverage.
+** Help switch for the new user.
+** Integration tests that provide 97% coverage.
 ** Invented new possible data sets.
 ** Checked for invalid data, did exclude invalid data from processing.
 
@@ -15,10 +25,40 @@
 ** Sticked to one coding style.
 ** I did not try to over engineer and only used repository and services as architectural patterns.
 ** I created some basic javadoc comments.
+** Create a enum with readable report line types.
+** Used existing libraries
+** I decided to not use unit test instead i managed to get high coverage with integration tests only.
+   That decision helps with future refactorings and increases maintainability.
 
 * clean software design & architecture
 
 ** Used sonar plugin for my IDE.
 ** Used a feature branch for every step.
-** Separations of concerns.
+** Separation into 6 concerns.
 ** Tried to keep it simple.
+
+== Run the solution
+
+I aligned to the proposed way to start the app. To test both provided CSV files, use the following commands:
+
+mvn exec:java -Dexec.args="--weather weather.csv"
+
+mvn exec:java -Dexec.args="--football football.csv"
+
+I also provided three additional examples containing invalid or malformed data:
+
+mvn exec:java -Dexec.args="--weather malformed.csv"
+
+mvn exec:java -Dexec.args="--weather weather_invalid.csv"
+
+mvn exec:java -Dexec.args="--weather weather_two_days.csv"
+
+== Next Steps would be
+
+* More Services perhaps need a dependency injection or another framework like Spring Boot, etc.
+* Reading the version from the manifest of the jar file.
+* Use lombok for the beans if they get more.
+* Thinking about a better solution for the MinDifferenceProcessService and the containing if statements based on the ReportType.
+  Perhaps a generic solution is not the best solution depending on the next requirements.
+* Localize the report messages and by doing that also changing the value to a list instead of a string.
+* Changing STDOUT to a file or (JSON) response of a HTTP service. Depends on the surrounding systems.
