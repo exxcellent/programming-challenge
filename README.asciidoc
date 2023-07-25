@@ -100,7 +100,7 @@ Your solution should focus on **maintainability**, **reusability** and
 == Getting started
 
 === Install Java
-For this project, the Java Development Kit 11 or above is required. You can download it from https://adoptopenjdk.net/.
+For this project, the Java Development Kit 17 or above is required. You can download it from https://adoptopenjdk.net/.
 
 === Getting a copy
 The starting point for every challenge is provided as a branch in a Gitlab.com/GitHub
